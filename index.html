@@ -6,15 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fontawesome.com/">
-    <script src="main.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <title> Voice Search With JavaScript</title>
+    <script src="main.js" defer></script>
 </head>
 <body>
     <div class="container">
         <form action="https://www.goggle.com/search" method="get" id="search-form">
-            <input type="text" name="q" placeholder="Search the web" autocomplete="off" autofocus>
+            <input type="text" name="q" placeholder="Search the web" class="search-input" autocomplete="off" autofocus>
             <button type="button"><i class="fa-solid fa-microphone"></i></button>
-        <p class="info"></p>
+            <p class="info"></p>
         </form>
     </div>
 </body>
