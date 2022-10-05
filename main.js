@@ -1,5 +1,5 @@
 const searchForm = document.querySelector("search-form");
-const searchFormInput = document.querySelector("#search-form input");
+const searchFormInput = document.querySelector("search-form input");
 
 const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
 
@@ -42,7 +42,7 @@ if(SpeechRecognition) {
   recognition.addEventListener("result", resultOfSpeechRecognition); 
   function resultOfSpeechRecognition(event) {
     const currentResultIndex = event.resultIndex;
-    const transcript = event.results[current][0].transcript;
+    const transcript = event.results[currentResultIndex][0].transcript;
     
     if(transcript.toLowerCase().trim()==="stop recording") {
       recognition.stop();
