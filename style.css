@@ -6,8 +6,8 @@
   }
   body {
     font-family: 'Montserrat', sans-serif;
-    background-color: #590a47;
-    color: #fff;
+    background-repeat: no-repeat;
+    background-size:cover;
   }
   .container {
     padding: 30px 50px;
